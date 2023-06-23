@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    image: bus-api
+    container_name: myfastapi
+    ports:
+      - "8888:8000"
+      - "8443:8443"
+    restart: always
+    env_file:
+      - .env.prod
+    depends_on:
+      - database
+    volumes:
+      - /etc/letsencrypt:/ssl
+  
+  database:
+    image: mongo:5.0.15
+    container_name: mymongo
+    ports:
+      - "몽고포트:몽고포트"
+    restart: always
+    volumes:
+      - ./mongodbvol:/data/db
+
+volumes:
+  data:
