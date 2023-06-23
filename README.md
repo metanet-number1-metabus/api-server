@@ -271,8 +271,7 @@ def update():
 
 - 어플리케이션 디렉토리와 테스트코드 디텍토리 준비
 
-![image](https://github.com/metanet-number1-metabus/api-server/assets/65393001/5c6f49d5-b333-4652-929b-c36b669f68c4)
-
+![Untitled (1)](https://github.com/metanet-number1-metabus/api-server/assets/65393001/6df4fda0-c9d1-4de0-87f8-5966c71ace3c)
 
 
 ## 3.2 FastAPI 서버 코드 작성
